@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2233E71C-892D-42CD-A05A-6FAD9F7BC100}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SiGRAND.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SiGRAND">
+        <MSBuild Projects="SiGRAND.dproj"/>
+    </Target>
+    <Target Name="SiGRAND:Clean">
+        <MSBuild Projects="SiGRAND.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SiGRAND:Make">
+        <MSBuild Projects="SiGRAND.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SiGRAND"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SiGRAND:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SiGRAND:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
