@@ -1,4 +1,5 @@
 *.dproj.local
+*.stat
 *.identcache
 /__history/
 /__recovery/

@@ -1,4 +1,4 @@
-object mainForm: TmainForm
+object mnForm: TmnForm
   Left = 0
   Top = 0
   Caption = 'SiGRAND CRM App'
@@ -8,4 +8,16 @@ object mainForm: TmainForm
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object mnMain: TMainMenu
+    Left = 568
+    Top = 48
+    object mnFile: TMenuItem
+      Text = 'File'
+      object mnExit: TMenuItem
+        Locked = True
+        Text = 'Exit'
+        OnClick = mnExitClick
+      end
+    end
+  end
 end

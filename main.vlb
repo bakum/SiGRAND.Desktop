@@ -1,0 +1,13 @@
+﻿[mnFile]
+Coordinates=100,50,53,36
+
+[mnMain]
+Coordinates=53,55,60,36
+
+[mnExit]
+Coordinates=10,10,54,36
+
+[]
+Coordinates=100,0,50,36
+Visible=True
+
