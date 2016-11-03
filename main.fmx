@@ -2,8 +2,8 @@ object mnForm: TmnForm
   Left = 0
   Top = 0
   Caption = 'SiGRAND CRM App'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 500
+  ClientWidth = 800
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -15,6 +15,7 @@ object mnForm: TmnForm
       Text = 'File'
       object mnExit: TMenuItem
         Locked = True
+        ShortCut = 32883
         Text = 'Exit'
         OnClick = mnExitClick
       end
